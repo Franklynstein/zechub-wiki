@@ -3,9 +3,9 @@
   "version": "1.1.0",
   "private": true,
   "scripts": {
-    "dev": "node --max-old-space-size=4096 node_modules/next/dist/bin/next dev --turbo",
-    "build": "node --max-old-space-size=4096 node_modules/next/dist/bin/next build",
-    "start": "next start",
+    "dev": "node api.js && node --max-old-space-size=4096 node_modules/next/dist/bin/next dev --turbo",
+    "build": "node api.js && node --max-old-space-size=4096 node_modules/next/dist/bin/next build",
+    "start": "node api.js && next start",
     "lint": "next lint",
     "test:coverage": "jest --coverage",
     "test": "jest --watch",
